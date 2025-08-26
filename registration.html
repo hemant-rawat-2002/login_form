@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <style>
+        body{
+            background-color: rgb(255, 252, 249);
+        }
+
+        .main_heading{
+            display: flex;
+           justify-content: center;
+           color: purple;
+        }
+
+        form
+        {
+            background-color: rgb(228, 226, 248);
+            padding: 20px ;
+            border-radius: 1rem;
+        }
+        .form-container-1{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: center; 
+        }
+
+        .form-group
+        {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            padding: 10px;
+
+        }
+
+        .form-container-2{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            justify-content: center; 
+
+        }
+
+        .form-group-address{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            padding: 10px;
+        }
+
+        .form-group-button
+        {
+           display: flex;
+           justify-content: center; 
+           gap:10px;
+        }
+
+        .form-container-heading{
+            padding: 10px;
+            background-color:rgb(206, 204, 231) ;
+            border-radius: 1rem;
+        }
+
+        label{
+            font-weight: bold;
+        }
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h1 class="main_heading"> STUDENT REGISTRATION FORM</h1>
+    <form>
+        
+        <h1 class="form-container-heading"> Basic Information</h1>
+            <div class="form-container-1">
+                <div class="form-group">
+                <label for="First_name"> First Name</label>
+                <input type="text" id="First_name" required>
+                </div>
+                <div class="form-group">
+                <label for="Middle_name"> Middle Name</label>
+                <input type="text" id="Middle_name">
+                </div>
+                <div class="form-group">
+                <label for="Last_name">Last Name </label>
+                <input type="text" id="Last_name" required>
+                </div>
+            
+            <div class="form-group">
+                <label for="roll_number">roll number </label>
+                <input type="number" id="roll_number" required>
+            </div>
+            <div class="form-group">
+                <label for="email_id">Email Id </label>
+                <input type="email" id="email_id" required>
+            </div>
+            <div class="form-group">
+                <label for="user_id">User Id </label>
+                <input type="text" id="user_id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Enter Password </label>
+                <input type="password" id="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Re_Enter_Password ">Re-Enter Password </label>
+                <input type="password" id="Re_Enter_Password" required>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch </label>
+                <select id="branch">
+                    <option value="CSE">CSE</option>
+                    <option value="electrical">electrical</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="civil">civil</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="year_of_passing">Year Of Passing </label>
+                <select id="year_of_passing">
+                    <option value="first">first</option>
+                    <option value="second">second</option>
+                    <option value="third">third</option>
+                    <option value="fourth">fourth</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="upload_photo">Upload Photo </label>
+                <input type="file" required>
+            </div>
+        </div>
+        
+
+        
+            <h1 class="form-container-heading">Personal Details</h1>
+            <div class="form-container-2">
+            <div class="form-group">
+                <label for="Father_name"> Father Name</label>
+                <input type="text" id="Father_name" required>
+             </div>
+             <div class="form-group">
+             
+
+                <label for="father_contact_number">Contact NO. </label>
+                <input type="number" id="father_contact_number" required>
+             </div>
+           
+            <div class="form-group">
+                <label for="Mother_name"> Mother Name</label>
+                <input type="text" id="Mother_name" required>
+
+                </div>
+             <div class="form-group">
+                <label for="mother_contact_number">Contact NO. </label>
+
+
+                <input type="number" id="mother_contact_number" required>
+            </div>
+            <div class="form-group">
+                <label for="DOB"> Date Of Birth</label>
+                <input type="date" id="DOB" required>
+                 </div>
+             <div class="form-group">
+                <label for="Aadhaar_number">Aadhaar NO. </label>
+                <input type="tel" id="Aadhaar_number" required>
+            </div>
+        </div>
+        
+       
+            <h1 class="form-container-heading">Personal Details</h1>
+            <div class="form-container-3">
+            <div class="form-group-address">
+                <label for="Address_1">Address1 </label>
+                <textarea id="Address_1" cols="40" rows="5" required></textarea>
+            </div>
+            <div class="form-group-address">
+                <label for="Address_2">Address2 </label>
+                <textarea id="Address_2" cols="40" rows="5"></textarea>
+            </div>
+            </div>
+
+        
+        <div class="form-group-button">
+            <input type="submit" value="register">
+            <input type="reset">
+        </div>
+    </form>
+</body>
+
+</html>
